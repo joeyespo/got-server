@@ -1,0 +1,3 @@
+gevent==1.1.2
+got-cli[postgresql]==0.1
+gunicorn==19.6.0

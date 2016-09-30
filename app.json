@@ -1,0 +1,33 @@
+{
+  "name": "Got Server",
+  "repository": "https://github.com/joeyespo/got-server",
+  "env": {
+    "DATABASE_URL": {
+      "description": "The database URL to interface with. Leave blank to use a fresh Heroku-Postgresql database.",
+      "required": false
+    },
+    "GOT_ENV": {
+      "description": "Clear this value to hide development pages.",
+      "required": false,
+      "value": "development"
+    },
+    "GOT_EXTENSIONS": {
+      "description": "Comma-separated list of extensions to enable. Leave blank to enable all builtin extensions.",
+      "required": false,
+      "value": ""
+    },
+    "GOT_ENGINE": {
+      "description": "The engine used to evaluate projections. Leave blank to use the default engine.",
+      "required": false,
+      "value": ""
+    },
+    "SENTRY_DSN": {
+      "description": "A token from https://getsentry.com for back-end error reporting. Leave blank to disable.",
+      "required": false,
+      "value": ""
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ]
+}
